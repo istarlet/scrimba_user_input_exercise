@@ -6,7 +6,7 @@
 # - Did you capitalize the name
 
 name = input("Please enter your first name: ")
-distance_km = float(input("Please enter the distance in km: "))
-distance_in_miles = distance_km * 1.609
+distance_km = input("Please enter the distance in km: ")
+distance_in_miles = float(distance_km) / 1.609
 
-print("Hi " + name.capitalize() + "," + " you walked " + str(distance_in_miles) + " miles.")
+print(f"Hi {name.title()}, {distance_km} km is the equivalent to {round(distance_in_miles)} miles.")
